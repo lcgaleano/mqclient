@@ -21,6 +21,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation group: 'com.ibm.mq', name: 'com.ibm.mq.allclient', version: '9.3.5.1'
+	implementation group: 'com.ibm.mq', name: 'mq-jms-spring-boot-starter', version: '3.2.4'
+
 }
 
 tasks.named('test') {
